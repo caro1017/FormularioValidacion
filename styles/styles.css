@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(36, 36, 36);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+}
+
+
+fieldset{
+    border: 1px solid lightskyblue;
+    width: 30rem;
+    padding: 1rem;
+    background-color: rgb(36, 36, 36);
+    box-shadow: 2px 5px 10px rgb(68, 67, 67);
+}
+
+
+label button {
+    border: none;
+    background-color: transparent;
+}
+
+label i{
+    cursor: pointer;
+    color: gray;
+    text-align: center;
+    font-size: 20px;
+}
+
+label i:hover{
+    color: lightskyblue;
+}
+
+hr{
+    width: 22rem;
+    margin-left: 2.5rem;
+    border: 0;
+    border-top: 1px solid gray;
+}
+
+.form_error{
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: rgb(175, 105, 129);
+    font-weight: 500;
+    display: none;
+}
+
+.form_error-activo{
+    display: block;
+}
+
+
+
+.formulario_imput_grupo{
+    position: relative;
+}
+
+
+.info{
+    background-color: transparent;
+    text-align: center;
+    font-size: 15px;
+    border: 3px solid transparent;
+    font-family: 'Roboto', sans-serif;
+    margin: 0.5rem;
+    outline: none;
+    color: lightskyblue;
+    transition: .3s ease all;
+}
+
+.info:focus{
+    background-color: transparent;
+    color: white;
+    opacity: 0.4;    
+    border-radius: 0.5rem;
+}
+
+.info:hover{
+    border: 1px solid lightskyblue ;
+}
+
+.form_validacion{
+    position: absolute;
+    z-index: 100;
+    bottom: 15px;
+    font-size: 16px;
+    opacity: 0;
+
+}
+
+.mensaje{
+    background-color: transparent;
+    text-align: center;
+    font-size: 15px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 1rem;
+    outline: none;
+    color: #FCCB99;
+    width: 50%;
+    height: 3rem;
+}
+
+.mensaje:focus{
+    background-color: gray;
+    color: white;
+    opacity: 0.4;    
+    border-radius: 0.5rem;
+}
+
+.texto{
+    margin-bottom: 0.7rem;
+}
+
+.boton{
+    cursor: pointer;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    color: grey;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    width: 7rem;
+    font-weight: 500;
+    border: 1px solid lightskyblue ;
+}
+
+.boton:hover{
+    transition: .5s;
+    border: 1px solid rgb(68, 67, 67) ;
+    box-shadow: 2px 3px 3px rgb(68, 67, 67);
+}
+
+
+/* Estilos validacion */
+
+.formulario_mensaje{
+    line-height: 2rem;
+    height: 2rem;
+    color: black;
+    font-size: 14px;
+    background-color: rgb(175, 105, 129);
+    border-radius: 0.2rem;
+    padding: 0 1rem;
+    display: none;
+}
+
+.formulario_mensaje-activo{
+    display: block;
+}
+
+.formulario_mensaje-exito {
+	font-size: 14px;
+	color: rgb(30, 201, 79);
+	display: none;
+}
+
+.formulario_mensaje-exito-activo {
+	display: block;
+}
+
+
+.formulario_grupo-correcto
+.form_validacion {
+    color: rgb(30, 201, 79);
+    opacity: 1;
+    margin: 0.3rem 10rem;
+}
+
+.formulario_grupo-correcto .info{
+    color: white;
+    border: 3px solid rgb(30, 201, 79);
+    opacity: 0.4;    
+    border-radius: 0.5rem;
+}
+
+.formulario_grupo-incorrecto label i{
+    color: rgb(175, 105, 129);
+    
+}
+
+.formulario_grupo-incorrecto
+.form_validacion{
+    color: rgb(175, 105, 129);
+    opacity: 1;
+    margin: 0.3rem 10rem;
+}
+
+.formulario_grupo-incorrecto .info{
+    color: white;
+    border: 3px solid rgb(175, 105, 129);
+    opacity: 0.4;    
+    border-radius: 0.5rem;
+}
+
+.formulario_grupo-incorrecto .mensaje{
+    color: white;
+    background-color: rgb(175, 105, 129);
+    opacity: 0.4;    
+    border-radius: 0.5rem;
+
+}
+
+
+/* Estilos para autor */
+
+a{
+    text-decoration: none;
+    color: lightslategray;
+    font-size: 13px;
+}
+
+p{
+    margin-top: 1rem;
+}
