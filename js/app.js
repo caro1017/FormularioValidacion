@@ -115,7 +115,7 @@ window.onload = function() {
 };
 
 // localStorage 
-/* const input = document.querySelectorAll('#contacto-form input');
+const input = document.querySelectorAll('#contacto-form input');
 console.log(input);
 
 const objectInput = {
@@ -139,4 +139,4 @@ const key = localStorage.key(0);
 setTimeout(()=>{
     localStorage.removeItem('formulario')
     console.log('Se elimina el dato del localStorage');
-}, 5000); */
+}, 5000); 
